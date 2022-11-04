@@ -38,7 +38,7 @@ class ProfileViewController: UIViewController {
     lazy var userName = UILabel().then {
         $0.font = UIFont(name: "AppleSDGothicNeo-Regular", size: 18)
         $0.textAlignment = .center
-        $0.text = "김솝트"
+        $0.text = "씬델리"
         $0.textColor = .white
     }
     lazy var chatBtn = UIButton(configuration: .filled()).then {

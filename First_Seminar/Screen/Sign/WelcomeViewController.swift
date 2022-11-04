@@ -11,7 +11,7 @@ import SnapKit
 
 class WelcomeViewController: UIViewController {
     private lazy var titleLabel = UILabel().then {
-        $0.text = "n/a님 \n환영합니다"
+        $0.text = "씬델리님 \n환영합니다"
         $0.numberOfLines = 0
         $0.textAlignment = .center
         $0.font = UIFont.boldSystemFont(ofSize: 22)
@@ -52,12 +52,12 @@ class WelcomeViewController: UIViewController {
     }
     func dataBind(result : String){
         if result == "" {
-            titleLabel.text = "n/a님 \n환영합니다"
+            titleLabel.text = "씬델리님 \n환영합니다"
         } else {
         titleLabel.text = "\(result)님 \n환영합니다"
         }
     }
     @objc func tappedBackBtn(){
-        changeRootViewController(HomeViewController())
+        changeRootViewController(FriendListViewController())
     }
 }
